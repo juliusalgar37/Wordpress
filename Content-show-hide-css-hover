@@ -1,0 +1,31 @@
+selector{
+    --text-position: -500px;
+    --heading-position: -50px;
+    --button-position: 70px;
+}
+
+selector, selector .single-card p, selector .single-card a, selector .single-card h2{
+    transition: .5s all ease-in-out;
+}
+selector .single-card p, selector .single-card a{
+    position: relative;
+    bottom: var(--text-position);
+}
+selector .single-card a{
+    transition: 0.5s all linear;
+    position: relative;
+    top: 500px;
+}
+selector .single-card:hover p, selector .single-card:hover a{
+    bottom: 0px;
+}
+selector .single-card:hover a{
+    top: var(--button-position);
+}
+selector .single-card h2{
+    position: relative;
+    bottom: var(--heading-position);
+}
+selector .single-card:hover h2{
+    bottom: 0px;
+}
